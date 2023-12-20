@@ -67,7 +67,7 @@ func main() {
 
 	port := "4443"
 	http.Handle("/", http.FileServer(http.Dir(".")))
-	log.Printf("File Server on HTTP port: %s\n", port)
+	log.Printf("File Server on HTTP port:%s\n", port)
 
 	//Listen on port *port
 	log.Fatal(http.ListenAndServe(":"+port, nil))
